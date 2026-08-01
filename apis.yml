@@ -1,8 +1,23 @@
 aid: scanwell
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scanwell.png
 name: Scanwell
-description: Scanwell is a company surfaced as a portfolio company of version-one-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Scanwell was surfaced as a portfolio company of version-one-ventures and added to the
+  API Evangelist network as a stub for enrichment. Enrichment probing (2026-07-21) found no live API
+  surface — the scanwellhealth.com domain associated with the Version One Ventures portfolio company
+  (Scanwell Health, an at-home smartphone diagnostic-testing startup) now 301-redirects to an
+  unrelated site, indicating the company is defunct, and the scanwell.com domain belongs to an
+  unrelated freight-forwarding firm (Scanwell Logistics) that publishes no developer program.
 url: https://raw.githubusercontent.com/api-evangelist/scanwell/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,9 +25,12 @@ x-backed-by:
 - version-one-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-no-api-surface
+x-status-evidence: 'scanwellhealth.com -> 301 -> wildflorida.org (unrelated); scanwell.com = Scanwell
+  Logistics (unrelated freight forwarder, no API/developer docs). Probed 2026-07-21 via WebFetch.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 apis: []
@@ -21,3 +39,8 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
