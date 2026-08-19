@@ -28,7 +28,7 @@ x-tier-reason: portfolio-lead
 x-status: defunct-no-api-surface
 x-status-evidence: 'scanwellhealth.com -> 301 -> wildflorida.org (unrelated); scanwell.com = Scanwell
   Logistics (unrelated freight forwarder, no API/developer docs). Probed 2026-07-21 via WebFetch.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
